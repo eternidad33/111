@@ -8,8 +8,9 @@ while len(a)>0:
         if(num%k==0 or num%10==k):
             key_del.append(key)
         num+=1
-
+    ac=0
     for key in key_del:
-        del a[key]
+        del a[key-ac]
+        ac+=1
         if len(a)==1:
             print(a[0])
