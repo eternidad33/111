@@ -13,5 +13,3 @@ for s,e in W:
     for i in range(s,e):
         timeLine[i]+=1
 print(timeLine.count(2))
-    
-
