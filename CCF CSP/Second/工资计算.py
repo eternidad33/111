@@ -13,5 +13,6 @@ else:
         if(t>afterTax[i] and t<afterTax[i+1]):
             s=3500+sA[i]
             s+=int((t-afterTax[i])/(1-rate[i+1]))
+            s=100*(round(s/100))
             break
 print(s)
