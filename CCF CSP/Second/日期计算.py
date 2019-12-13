@@ -1,15 +1,14 @@
 y=int(input())
 d=int(input())
-mon,day,daysum=0,0,0
+mon=0
 md=[0,31,28,31,30,31,30,31,31,30,31,30,31]
-if y%4==0 and y%100!=0:
+if ((y%4==0 and y%100!=0) or(y%400==0)):
     md[2]=29
-for i in range(13):
-    if daysum<d:
-        daysum+=md[i]
+for i in md:
+    if d-i>0:
+        d-=i
+        mon+=1
     else:
-        mon=i-1
-        day=md[i-1]-(daysum-d)
         break
 print(mon)
-print(day)
+print(d)
