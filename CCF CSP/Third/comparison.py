@@ -1,5 +1,25 @@
+#最大矩形
+
+#输入
 n = int(input())
 a = list(map(int,input().split()))
+
+'''
+另一种思路，搜索矩形i向右的局部最大矩形
+tempmax = 0
+for i in range(len(a)):
+    h=a[i]
+    for l in range(len(a)-i):
+
+        if(h>a[i+l]):
+            h = a[i+l]
+        if(h == 1):
+            break
+        tempmax = tempmax if(tempmax> h*(l+1)) else h*(l+1)
+tempmax = tempmax if(tempmax> len(a)) else len(a)
+print(tempmax)
+'''
+
 b=[]#储存所有局部最大矩形
 for i in range(len(a)):
     width = 0   #矩形宽度
