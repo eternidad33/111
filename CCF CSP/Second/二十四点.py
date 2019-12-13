@@ -10,5 +10,3 @@ for a in s:
         print("Yes")
     else:
         print("No")
-
-    
