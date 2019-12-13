@@ -1,32 +1,19 @@
-N,M=map(int,input().split())
-window,coordinate=[],[]
-for i in range(N):
-    s=list(map(int,input().split()))
-    window.append(s)
-for j in range(M):
-    s=list(map(int,input().split()))
-    coordinate.append(s)
-for coor in coordinate:
-    m=0
-    for w in window:
-        if w[0]<=coor[0]<=w[2] and w[1]<=coor[1]<=w[3]:
-            m=window.index(w)+1
-        if m==0:
-            m='IGNORED'
-    coor.append(m)
-for co in coordinate:
-    print(co[2])
-'''
-3 4
-0 0 4 4
-1 1 5 5
-2 2 6 6
-1 1
-0 0
-4 4
-0 5
-'''          
-
-            
-
-    
+n,m=map(int,input().split())
+w=[]
+for i in range(n):
+    w.append(list(map(int,input().split())))
+    w[i].append(i+1)
+for j in range(m):
+    x,y=list(map(int,input().split()))
+    find=False
+    for i,s in reversed(list(enumerate(w))):
+        if(x>=s[0] and x<=s[2] and y>=s[1] and y<=s[3]):
+            print(s[4])
+            last=w[i]
+            for j in range(i,len(w)-1):
+                w[j]=w[j+1]
+            w[-1]=last
+            find=True
+            break
+    if (not find):
+        print('IGNORED')
