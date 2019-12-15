@@ -13,4 +13,4 @@ for ti in range(t):
             if POS[i]==POS[j]:
                 dire[i]=-dire[i]
                 dire[j]=-dire[j]
-print(" ".join(str(i) for i in POS))     
+print(" ".join(str(i) for i in POS))

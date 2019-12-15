@@ -29,5 +29,3 @@ for i in range(1,N-1):
     if t[i-1]==t[i]==t[i+1]==1:
         E+=1
 print("{} {} {}".format(T,D,E))
-
-    

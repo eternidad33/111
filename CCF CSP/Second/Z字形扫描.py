@@ -17,7 +17,6 @@ for t in range(n*n):
         else:
             j+=1
             i-=1
-            
     else:
         if i==n-1:
             j+=1

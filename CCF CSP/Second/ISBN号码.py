@@ -18,6 +18,3 @@ else:
     else:
         s=s[:-1]+str(code)
     print(s)
-
-
-    

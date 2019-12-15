@@ -11,6 +11,6 @@ for i in a:
     if min_num==max_num:
         print(i)
         t=True
-        break    
+        break
 if t==False:
     print(-1)

@@ -11,4 +11,3 @@ for i in range(10001):
     if num[i]>=max_num[0]:
         max_num[0],max_num[1]=i,num[i]
 print(max_num[0])
-        

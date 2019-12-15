@@ -7,5 +7,4 @@ for i in ls:
 a=sorted(a.items(),key=lambda item:item[1],reverse=True)
 for j in a:
     print(j[0],j[1])
-#5 2 3 3 1 3 4 2 5 2 3 5 
-    
+#5 2 3 3 1 3 4 2 5 2 3 5

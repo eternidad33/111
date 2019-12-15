@@ -9,4 +9,4 @@ for i in a:
         t=0
 if t!=0:
     count+=1
-print(count) 
+print(count)
